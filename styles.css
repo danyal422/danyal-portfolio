@@ -1,0 +1,121 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+header {
+    background-color: #1a1a1a; /* Dark gray header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.8rem; /* Larger font size for name */
+    font-weight: bold; /* Bold font */
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.8rem; /* Slightly larger subtitle */
+    font-style: italic; /* Italic style for subtitle */
+    color: #61dafb; /* Light blue color for subtitle */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.nav-link {
+    color: #61dafb; /* Light blue color */
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 5px 0; /* Padding for better spacing */
+    position: relative; /* For the underline effect */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #21a1f1; /* Darker blue on hover */
+}
+
+.nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Position the underline below the text */
+    height: 3px; /* Height of the underline */
+    background-color: #21a1f1; /* Color of the underline */
+    transition: height 0.3s, background-color 0.3s; /* Transition effects */
+}
+
+/* Main container styles */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #333; /* Bottom border for separation */
+}
+
+h3 {
+    color: #61dafb; /* Light blue color for section headings */
+    font-size: 2.5rem; /* Increased heading size */
+    border-bottom: 2px solid #21a1f1; /* Bottom border for section headings */
+    padding-bottom: 10px; /* Padding for spacing */
+    margin-bottom: 15px; /* Margin for spacing */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #1a1a1a; /* Dark gray for list items */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #333; /* Lighter gray on hover */
+}
+
+/* Contact link styles */
+.contact-info {
+    font-size: 1.2rem; /* Larger font size for contact info */
+    color: #fff; /* White color */
+    margin: 5px 0; /* Margin for spacing */
+}
+
+a {
+    color: #61dafb; /* Light blue for links */
+}
+
+a:hover {
+    color: #21a1f1; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a; /* Dark gray footer */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
